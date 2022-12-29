@@ -272,7 +272,7 @@ EOF
         }
 
         $progressType = $resolver->getProgress();
-        $finder = $resolver->getFinder();
+        $finder[] = $resolver->getFinder();
 
         if (null !== $stdErr && $resolver->configFinderIsOverridden()) {
             $stdErr->writeln(
